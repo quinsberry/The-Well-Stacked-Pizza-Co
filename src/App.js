@@ -1,7 +1,8 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { Navbar } from './Navbar/Navbar';
 import { Banner } from './Banner/Banner';
+import { Menu } from './Menu/Menu';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,13 +18,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Container = styled.div`
+  max-width: 1600px;
+  margin: auto;
+`;
+
 function App() {
   return (
     <>
       <GlobalStyle />
       <Navbar />
       <Banner />
-      <div>asdwdwdw</div>
+      <Container>
+        <Menu />
+        <div>asdwdwdw</div>
+      </Container>
     </>
   );
 }
