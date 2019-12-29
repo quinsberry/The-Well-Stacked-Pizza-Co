@@ -9,6 +9,8 @@ const NavbarStyled = styled.div`
   position: fixed;
   width: 100%;
   z-index: 99;
+  display: flex;
+  align-items: center;
 `;
 
 const Logo = styled(Title)`
@@ -22,9 +24,7 @@ export function Navbar() {
     <NavbarStyled>
       <Logo>
         The Well Stacked Pizza Co.
-        <span role="img" aria-label="pizza slice">
-          🍕
-        </span>
+        <span role="img" aria-label="pizza slice"> 🍕</span>
       </Logo>
     </NavbarStyled>
   );
