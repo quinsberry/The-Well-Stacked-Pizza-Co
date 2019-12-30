@@ -5,7 +5,7 @@ import { Food, FoodGrid, FoodLabel } from './FoodGrid';
 import { formatPrice } from '../Data/FoodData';
 
 const MenuStyled = styled.div`
-  height: 1000px;
+height: 1200px;
   margin: 0px 50px 50px 20px;
 `;
 

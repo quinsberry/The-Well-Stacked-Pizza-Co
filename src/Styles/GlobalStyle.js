@@ -21,6 +21,6 @@ export const Container = styled.div`
   grid-template-columns: 4fr 1fr;
   max-width: 1300px;
   margin: auto;
-
+  height: calc(100% + 20px);
 `;
 
