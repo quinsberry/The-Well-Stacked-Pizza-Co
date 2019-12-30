@@ -25,7 +25,7 @@ function App() {
       <Banner />
       <Container>
         <Menu {...openFood} />
-        <Order {...orders} />
+        <Order {...orders} {...openFood} />
       </Container>
     </>
   );
