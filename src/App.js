@@ -11,6 +11,7 @@ import { useTitle } from './Hooks/useTitle';
 
 
 
+
 function App() {
   const openFood = useOpenFood();
   const orders = useOrders();
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <FoodDialog {...openFood} {...orders} />
+      <FoodDialog {...openFood} {...orders} esc />
       <Navbar />
       <Banner />
       <Container>
