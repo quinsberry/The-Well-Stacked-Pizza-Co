@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
   }
 
   h1, h2, h3 {
