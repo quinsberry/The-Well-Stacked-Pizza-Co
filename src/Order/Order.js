@@ -36,6 +36,18 @@ const OrderItem = styled.div`
   justify-content: space-between;
 `;
 
+const DetailItem = styled.div`
+  color: grey;
+  font-size: 12px;
+`;
+
+const EmptyOrder = styled.div`
+  text-align: center;
+  margin-top: 7%;
+  font-size: 25px;
+  opacity: .2;
+`;
+
 export function Order({ orders }) {
   const subtotal = orders.reduce((total, order) => {
     return total + getPrice(order);
@@ -46,7 +58,9 @@ export function Order({ orders }) {
     <OrderStyled>
       {orders.length === 0 ? (
         <OrderContent>
-          Your order is currently empty.
+          <EmptyOrder>
+            Your order is currently empty.
+          </EmptyOrder>
         </OrderContent>
       ) : (
           <OrderContent>
@@ -62,6 +76,13 @@ export function Order({ orders }) {
                   <div />
                   <div>{formatPrice(getPrice(order))}</div>
                 </OrderItem>
+                <DetailItem>
+                  {order.toppings
+                    .filter(t => t.checked)
+                    .map(topping => topping.name)
+                    .join(", ")
+                  }
+                </DetailItem>
               </OrderContainer>
             ))}
             <OrderContainer>
