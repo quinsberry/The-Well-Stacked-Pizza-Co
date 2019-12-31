@@ -12,12 +12,12 @@ import { Choices } from './Choices';
 import { useChoice } from '../Hooks/useChoice';
 
 
-const Dialog = styled.div`
+export const Dialog = styled.div`
   width: 500px;
   background-color: white;
   position: fixed;
   top: 75px;
-  z-index: 5;
+  z-index: 12;
   max-height: calc(100% - 100px);
   left: calc(50% - 250px);
   display: flex;
@@ -100,14 +100,14 @@ const DialogBannerName = styled(FoodLabel)`
   }
 `;
 
-const DialogShadow = styled.div`
+export const DialogShadow = styled.div`
   position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
   background-color: black;
   opacity: .7;
-  z-index: 4;
+  z-index: 11;
 `;
 
 const pricePerTopping = 1.5;
