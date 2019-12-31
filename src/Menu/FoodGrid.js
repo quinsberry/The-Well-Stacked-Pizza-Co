@@ -7,12 +7,22 @@ export const FoodGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
   padding-bottom: 10px;
+
+  @media only screen and (max-width: 852px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @media only screen and (max-width: 320px) {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
 `;
 
 export const FoodLabel = styled(Title)`
   position: absolute;
   background-color: rgba(255,255,255,.8);
   padding: 5px;
+  @media only screen and (max-width: 425px) {
+    font-size: 20px;
+  }
 `;
 
 export const Food = styled.div`

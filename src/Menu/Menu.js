@@ -5,8 +5,15 @@ import { Food, FoodGrid, FoodLabel } from './FoodGrid';
 import { formatPrice } from '../Data/FoodData';
 
 const MenuStyled = styled.div`
-height: 1200px;
+  height: 1200px;
   margin: 0px 50px 50px 20px;
+
+  @media only screen and (max-width: 720px) {
+    height: 100%;
+  }
+  @media only screen and (max-width: 320px) {
+    margin: 0;
+  }
 `;
 
 export function Menu({ setOpenFood }) {

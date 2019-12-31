@@ -11,10 +11,22 @@ const OrderStyled = styled.div`
   width: 370px;
   height: calc(100% - 50px);
   background-color: white;
-  box-shadow: 1px 0px 5px 4px grey;
-  z-index: 10;
+  box-shadow: 1px 5px 5px 4px grey;
+  z-index: 4;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 852px) {
+    max-width: 340px;
+  }
+  @media only screen and (max-width: 425px) {
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 320px) {
+    margin-top: 30px;
+    width: 300px;
+    box-shadow: 1px 1px 2px 1px grey;
+  }
 `;
 
 

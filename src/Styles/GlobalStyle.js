@@ -22,5 +22,11 @@ export const Container = styled.div`
   max-width: 1300px;
   margin: auto;
   height: calc(100% + 20px);
+
+  @media only screen and (max-width: 720px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 

@@ -22,6 +22,22 @@ const Dialog = styled.div`
   left: calc(50% - 250px);
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 720px) {
+    width: 400px;
+    left: 21%;
+  }
+  @media only screen and (max-width: 425px) {
+    width: 300px;
+    left: 13%;
+  }
+  @media only screen and (max-width: 375px) {
+    left: 10%;
+  }
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+    left: 6%;
+  }
 `;
 
 export const DialogContent = styled.div`
@@ -29,6 +45,11 @@ export const DialogContent = styled.div`
   min-height: 100px;
   padding: 0px 40px;
   padding-bottom: 80px;
+
+  @media only screen and (max-width: 425px) {
+    padding: 0px 20px;
+    padding-bottom: 50px;
+  }
 `;
 
 export const DialogFooter = styled.div`
@@ -53,6 +74,10 @@ export const ConfirmButton = styled(Title)`
     background-color: grey;
     pointer-events: none;
   `}
+
+  @media only screen and (max-width: 720px) {
+    max-width: 200px;
+  }
 `;
 
 const DialogBanner = styled.div`
@@ -70,6 +95,9 @@ const DialogBannerName = styled(FoodLabel)`
   padding: 5px 40px;
   /* ${({ img }) => (img ? `top: 100px;` : `top: 20px;`)} */
   /* top: ${({ img }) => (img ? `100px` : `20px`)}; */
+  @media only screen and (max-width: 425px) {
+    font-size: 25px;
+  }
 `;
 
 const DialogShadow = styled.div`
