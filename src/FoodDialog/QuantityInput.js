@@ -14,6 +14,7 @@ const QuantityInputStyled = styled.input`
 const IncrementContainer = styled(Title)`
   display: flex;
   height: 24px;
+  padding-bottom: 5px;
 `;
 
 const IncrementButton = styled.div`
