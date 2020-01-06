@@ -6,6 +6,7 @@ import { pizzaRed } from '../Styles/colors';
 const QuantityInputStyled = styled.input`
   font-size: 18px;
   width: 30px;
+  line-height: normal;
   text-align: center;
   border: none;
   outline: none;
@@ -14,7 +15,6 @@ const QuantityInputStyled = styled.input`
 const IncrementContainer = styled(Title)`
   display: flex;
   height: 24px;
-  padding-bottom: 5px;
 `;
 
 const IncrementButton = styled.div`
