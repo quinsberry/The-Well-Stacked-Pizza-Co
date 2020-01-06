@@ -13,7 +13,8 @@ const QuantityInputStyled = styled.input`
 
 const IncrementContainer = styled(Title)`
   display: flex;
-  height: 30px;
+  height: 24px;
+  align-items: center;
 `;
 
 const IncrementButton = styled.div`
@@ -38,6 +39,7 @@ const IncrementButton = styled.div`
 const QuantityButtons = styled.div`
   margin-left: 15px;
   display: flex;
+  align-items: center;
 `;
 
 export function QuantityInput({ quantity }) {
