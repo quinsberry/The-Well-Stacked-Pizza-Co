@@ -6,7 +6,6 @@ import { pizzaRed } from '../Styles/colors';
 const QuantityInputStyled = styled.input`
   font-size: 18px;
   width: 30px;
-  line-height: normal;
   text-align: center;
   border: none;
   outline: none;
@@ -49,7 +48,7 @@ export function QuantityInput({ quantity }) {
         <IncrementButton onClick={() => {
           quantity.setValue(quantity.value - 1);
         }} disabled={quantity.value <= 1}> - </IncrementButton>
-        <QuantityInputStyled {...quantity} />
+        <div><QuantityInputStyled {...quantity} /></div>
         <IncrementButton onClick={() => {
           quantity.setValue(quantity.value + 1);
         }}> + </IncrementButton>
