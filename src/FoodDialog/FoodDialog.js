@@ -83,7 +83,6 @@ export const ConfirmButton = styled(Title)`
 const DialogBanner = styled.div`
   min-height: 200px;
   margin-bottom: 20px;
-  /* ${({ img }) => (img ? `background-image: url(${img});` : `min-height: 75px;`)} */
   ${({ img }) => `background-image: url(${img});`}
   background-position: center;
   background-size: cover;
@@ -93,8 +92,6 @@ const DialogBannerName = styled(FoodLabel)`
   top: 100px;
   font-size: 30px;
   padding: 5px 40px;
-  /* ${({ img }) => (img ? `top: 100px;` : `top: 20px;`)} */
-  /* top: ${({ img }) => (img ? `100px` : `20px`)}; */
   @media only screen and (max-width: 425px) {
     font-size: 25px;
   }
@@ -149,15 +146,6 @@ function FoodDialogContainer({ openFood, setOpenFood, setOrders, orders }) {
     setOrders(newOrders);
     close();
   }
-
-  // function esc() {
-  //   document.addEventListener('keypress', e => {
-  //     if (e.keyCode === 27) {
-  //       console.log('esc pressed');
-  //       close();
-  //     }
-  //   });
-  // }
 
   return (
     <>
